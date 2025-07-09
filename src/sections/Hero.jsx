@@ -21,7 +21,7 @@ const Hero = () => {
                 <Astronaut/>
                 <OrbitControls/>
 
-                {/* video  - 41.24 */}
+                {/* video  - 41.24 - thursday */}
 
             </Canvas>
         </figure>

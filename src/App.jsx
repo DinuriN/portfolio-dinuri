@@ -9,7 +9,8 @@ function App() {
       
       <Navbar/>
       <Hero/>
-      <About/>
+      <About/> 
+      {/* video 1.06.08 */}
       <section className='min-h-screen'></section>
       <section className='min-h-screen'></section>
       <section className='min-h-screen'></section>

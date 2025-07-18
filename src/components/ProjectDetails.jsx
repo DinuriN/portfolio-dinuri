@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { motion } from "motion/react";
 const ProjectDetails = ({
     title,
     description,
@@ -11,7 +10,11 @@ const ProjectDetails = ({
 }) => {
   return (
     <div className='fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm'>
-      <div className='relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10'>
+      <motion.div 
+      className='relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10'
+      initial={{opacity:0, scale:0.5}}
+      animate={{opacity:1, scale:1}}
+      >
       <button 
       onClick={closeModel}
       className='absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500'>
@@ -47,7 +50,7 @@ const ProjectDetails = ({
           </div>
       </div>
         
-      </div>
+      </motion.div>
     </div>
   );
 }

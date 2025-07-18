@@ -12,7 +12,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "src/assets/projects/accessories.jpg",
     tags: [
       {
         id: 1,
@@ -49,7 +49,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "src/assets/projects/auth-system.jpg",
     tags: [
       {
         id: 1,
@@ -86,7 +86,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "src/assets/projects/blazor-app.jpg",
     tags: [
       {
         id: 1,
@@ -123,7 +123,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "src/assets/projects/game-engine.jpg",
     tags: [
       {
         id: 1,
@@ -160,7 +160,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "src/assets/projects/wordpress-theme.jpg",
     tags: [
       {
         id: 1,
@@ -197,7 +197,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "src/assets/projects/elearning.jpg",
     tags: [
       {
         id: 1,

@@ -1,4 +1,6 @@
 import React from 'react';
+import ProjectDetails from './ProjectDetails';
+import { desc } from 'motion/react-client';
 
 const Project = ({title, description, subdescription, href, image, tags}) => {
   return (
@@ -18,6 +20,14 @@ const Project = ({title, description, subdescription, href, image, tags}) => {
       </button>
     </div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
+    <ProjectDetails 
+    title={title} 
+    description={description} 
+    subdescription={subdescription}
+    image={image}
+    tags={tags}
+    href={href}
+    />
     </>
   );
 }

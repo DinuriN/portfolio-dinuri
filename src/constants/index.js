@@ -4,7 +4,7 @@ export const myProjects = [
     title: "E-commerce Platform",
     description:
       "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
-    subDescription: [
+    subdescription: [
       "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
       "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
@@ -41,7 +41,7 @@ export const myProjects = [
     title: "Authentication & Authorization System",
     description:
       "A secure authentication and authorization system using Auth0 for seamless user management.",
-    subDescription: [
+    subdescription: [
       "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
       "Implemented role-based access control (RBAC) for fine-grained user permissions.",
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
@@ -54,22 +54,22 @@ export const myProjects = [
       {
         id: 1,
         name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        path: "src/assets/logos/auth0.svg",
       },
       {
         id: 2,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: "src/assets/logos/react.svg",
       },
       {
         id: 3,
         name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        path: "src/assets/logos/sqlite.svg",
       },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "src/assets/logos/tailwindcss.svg",
       },
     ],
   },
@@ -78,7 +78,7 @@ export const myProjects = [
     title: "Blazor Web App",
     description:
       "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
+    subdescription: [
       "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
       "Implemented API interactions using .NET Core for a robust backend.",
       "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
@@ -91,22 +91,22 @@ export const myProjects = [
       {
         id: 1,
         name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        path: "src/assets/logos/blazor.svg",
       },
       {
         id: 2,
         name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        path: "src/assets/logos/dotnetcore.svg",
       },
       {
         id: 3,
         name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        path: "src/assets/logos/sqlite.svg",
       },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "src/assets/logos/tailwindcss.svg",
       },
     ],
   },
@@ -115,7 +115,7 @@ export const myProjects = [
     title: "C++ Game Engine",
     description:
       "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
+    subdescription: [
       "Built a powerful rendering engine using OpenGL and C++.",
       "Developed a physics engine with collision detection and particle effects.",
       "Implemented a scripting system for easy game customization.",
@@ -128,22 +128,22 @@ export const myProjects = [
       {
         id: 1,
         name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        path: "src/assets/logos/cplusplus.svg",
       },
       {
         id: 2,
         name: "C#",
-        path: "/assets/logos/csharp.svg",
+        path: "src/assets/logos/csharp.svg",
       },
       {
         id: 3,
         name: "Git",
-        path: "/assets/logos/git.svg",
+        path: "src/assets/logos/git.svg",
       },
       {
         id: 4,
         name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
+        path: "src/assets/logos/microsoft.svg",
       },
     ],
   },
@@ -152,7 +152,7 @@ export const myProjects = [
     title: "WordPress Custom Theme",
     description:
       "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
+    subdescription: [
       "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
       "Integrated Tailwind CSS for modern styling and UI enhancements.",
       "Optimized SEO and page speed using Vite.js for fast builds.",
@@ -165,22 +165,22 @@ export const myProjects = [
       {
         id: 1,
         name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        path: "src/assets/logos/wordpress.svg",
       },
       {
         id: 2,
         name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        path: "src/assets/logos/html5.svg",
       },
       {
         id: 3,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: "src/assets/logos/css3.svg",
       },
       {
         id: 4,
         name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        path: "src/assets/logos/vitejs.svg",
       },
     ],
   },
@@ -189,7 +189,7 @@ export const myProjects = [
     title: "Online Learning Platform",
     description:
       "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
+    subdescription: [
       "Built using Blazor WebAssembly for a seamless SPA experience.",
       "Implemented video streaming with Azure Media Services.",
       "Added a quiz system with dynamic question generation and real-time grading.",
@@ -202,22 +202,22 @@ export const myProjects = [
       {
         id: 1,
         name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        path: "src/assets/logos/blazor.svg",
       },
       {
         id: 2,
         name: "Azure",
-        path: "/assets/logos/azure.svg",
+        path: "src/assets/logos/azure.svg",
       },
       {
         id: 3,
         name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        path: "src/assets/logos/stripe.svg",
       },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "src/assets/logos/tailwindcss.svg",
       },
     ],
   },

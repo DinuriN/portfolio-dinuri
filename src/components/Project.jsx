@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectDetails from './ProjectDetails';
 import { desc } from 'motion/react-client';
 
 const Project = ({title, description, subdescription, href, image, tags}) => {
+    const [isHidden, setIsHidden]=useState(false);
   return (
     <>
     <div className='flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0'>
@@ -14,20 +15,23 @@ const Project = ({title, description, subdescription, href, image, tags}) => {
         ))}
       </div>
       </div>
-      <button className='flex items-center gap-1 cursor-pointer hover-animation'>
+      <button 
+      onClick={()=>setIsHidden(true)}
+      className='flex items-center gap-1 cursor-pointer hover-animation'>
         Read More
         <img src="src/assets/arrow-right.svg" className='w-5'/>
       </button>
     </div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
-    <ProjectDetails 
+    {isHidden && (<ProjectDetails 
     title={title} 
     description={description} 
     subdescription={subdescription}
     image={image}
     tags={tags}
     href={href}
-    />
+    closeModel={()=>setIsHidden(false)}
+    />)}
     </>
   );
 }

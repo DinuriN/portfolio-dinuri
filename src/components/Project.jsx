@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import ProjectDetails from './ProjectDetails';
 import { desc } from 'motion/react-client';
 
-const Project = ({title, description, subdescription, href, image, tags}) => {
+const Project = ({title, description, subdescription, href, image, tags, setPreview,}) => {
     const [isHidden, setIsHidden]=useState(false);
   return (
     <>
-    <div className='flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0'>
+    <div 
+    className='flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0'
+    onMouseEnter={()=>setPreview(image)}
+    onMouseLeave={()=>setPreview(null)}
+    >
     <div>
       <p className='text-2xl'>{title}</p>
       <div className='flex gap-5 mt-2 text-sand'>

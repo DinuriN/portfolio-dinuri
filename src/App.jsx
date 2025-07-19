@@ -14,11 +14,21 @@ function App() {
       
       <Navbar/>
       <Hero/>
-      <About/> 
-      <Projects/>
+      <section id='about'>
+        <About/> 
+      </section>
+
+      <section id='work'>
+        <Projects/>
+      </section>
+      
       <Experiences/>
       <Testimonial/>
-      <Contact/>
+
+      <section id='contact'>
+        <Contact/>
+      </section>
+      
       <Footer/>
     </div>
   );

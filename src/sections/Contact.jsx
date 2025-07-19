@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Alert from "../components/Alert";
+import { Particles } from "../components/Particles";
 
 const Contact = () => {
     const [formData, setFormData]=useState({
@@ -9,11 +11,22 @@ const Contact = () => {
     });
 
     const [isLoading, setIsLoading]=useState(false);
+    const [showAlert, setShowAlert]=useState(false);
+    const [alertType, setAlertType]=useState("success");
+    const [alertMessage, setAlertMessage]=useState("");
 
     const handleChange=(e)=>{
         setFormData({...formData, [e.target.name]:e.target.value});
     };
 
+    const showAlertMessage=(type, message)=>{
+        setAlertType(type);
+        setAlertMessage(message);
+        setShowAlert(true);
+        setTimeout(()=>{
+            setShowAlert(false);
+        }, 5000);
+    };
     const handleSubmit=async (e)=>{
         e.preventDefault();
         setIsLoading(true);
@@ -30,12 +43,13 @@ const Contact = () => {
         "h-0lD9E8803Fds3cU"
     );
         setIsLoading(false);
-        alert("Success");
+        setFormData({name: "", email: "", message:""});
+        showAlertMessage("success", "Your message has been sent");
             
         } catch (error) {
             setIsLoading(false);
             console.log(error);
-            alert("Failed");
+            showAlertMessage("danger", "Something went wrong!");
         }
 
         
@@ -43,7 +57,15 @@ const Contact = () => {
 
   return (
     <section className="relative flex items-center c-space section-spacing">
-        <div className="flex flex-col items-center justify-center max-w-md p-5 ms-auto border border-white/10 rounded-2xl bg-primary">
+        <Particles
+        className="absolute inset-0 -z-50"
+        quantity={100}
+        ease={80}
+        color={"#ffffff"}
+        refresh
+      />
+       {showAlert&& <Alert type={alertType} text={alertMessage}/>}
+        <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
             <h2 className="text-heading">Let's Talk</h2>
             <p className="font-normal text-neutral-400">Whether you're looking to build a new website improve your existing

@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 import { easing } from 'maath';
 import Loader from '../components/Loader';
 
+
 const Hero = () => {
   const isMobile=useMediaQuery({maxWidth:853});
   return (

@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href='/' className='text-xl font-bold transition-colors text-neutral-400 hover:text-white'>Dinuri Amarasinghe</a>
 
             <button onClick={()=> setIsOpen(!isOPen)} className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden'>
-                <img src={isOPen? '/assets/close.svg': '/assets/menu.svg'} className='w-6 h-6'/>
+                <img src={isOPen? 'public/assets/close.svg': 'public/assets/menu.svg'} className='w-6 h-6'/>
             </button>
 
             <nav className='hidden sm:flex'>

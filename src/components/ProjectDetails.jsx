@@ -18,7 +18,7 @@ const ProjectDetails = ({
       <button 
       onClick={closeModel}
       className='absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500'>
-        <img src='/assets/close.svg' className='w-6 h-6'/>
+        <img src='public/assets/close.svg' className='w-6 h-6'/>
       </button>
       <img 
       src={image}
@@ -43,7 +43,7 @@ const ProjectDetails = ({
             </div>
             <a className='inline-flex items-center gap-1 font-medium cursor-pointer hover-animation'>
                 View Project 
-                <img src='/assets/arrow-up.svg'
+                <img src='public/assets/arrow-up.svg'
                 className='size-4'
                 href={href}/>
             </a>
